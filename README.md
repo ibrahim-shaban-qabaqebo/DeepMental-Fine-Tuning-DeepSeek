@@ -74,6 +74,8 @@ The project uses Python with the following key dependencies:
 ### Deployment
 12. `Save and Upload to huggingface.ipynb`
     - Model saving and Hugging Face upload procedures
+    - Fine tuned: https://huggingface.co/ibrahimShaban/Fine-Tuned-Deepmental-Llama-8b
+    - Few shot learning: https://huggingface.co/ibrahimShaban/few-shot-learning-deep-mental-deepLlama8b
 
 13. `App on huggingface.py`
     - Gradio-based web interface implementation
