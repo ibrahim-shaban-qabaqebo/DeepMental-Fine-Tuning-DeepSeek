@@ -23,59 +23,59 @@ The project uses Python with the following key dependencies:
 ## Repository Structure
 
 ### Data Processing and Analysis
-1. `0. Public_Real_Dataset_Processing_.ipynb`
+1. `Public_Real_Dataset_Processing_.ipynb`
    - Processes and prepares public mental health conversation datasets
 
-2. `1. EDA_of_Synthetic_Data.ipynb`
+2. `EDA_of_Synthetic_Data.ipynb`
    - Exploratory Data Analysis of the synthetic CBT dataset
    - Includes demographic analysis, diversity measures, correlation matrices
    - Term frequency analysis across therapy phases
 
 ### Model Training
-3. `2. Few Shot Learning.ipynb`
+3. `Few Shot Learning.ipynb`
    - Implements few-shot learning baseline using 100 annotated examples
    - Uses QLoRA for efficient training
 
-4. `3. Fine Tune - DeepMental.ipynb`
+4. `Fine Tune - DeepMental.ipynb`
    - Full fine-tuning of the DeepMental model using QLoRA
    - Incorporates THINK methodology for step-by-step reasoning
    - Optimizes for CBT alignment
 
 ### Response Generation
-5. `4. Generate-traditional.ipynb`
+5. `Generate-traditional.ipynb`
    - Generates responses using traditionally fine-tuned LLaMA model
    - Uses Alpaca-style prompt formatting
 
-6. `5. Generate-fewshot.ipynb`
+6. `Generate-fewshot.ipynb`
    - Implements few-shot learning response generation
    - Maintains consistent prompt structure for comparison
 
-7. `6. Generate Responses - DeepMental.ipynb`
+7. `Generate Responses - DeepMental.ipynb`
    - Generates responses using the DeepMental reasoning model
    - Produces structured outputs with cognitive restructuring patterns
 
 ### Evaluation and Analysis
-8. `7. gather generated data.ipynb`
+8. `gather generated data.ipynb`
    - Processes and merges outputs from all models
    - Standardizes format and aligns with benchmark dataset
 
-9. `8. Inference - DeepMental.ipynb`
+9. `Inference - DeepMental.ipynb`
    - Individual inference testing
    - Supports custom input scenarios
 
-10. `9. Evalution.ipynb`
+10. `Evalution.ipynb`
     - Comprehensive evaluation using MentalChat16K benchmark
     - Metrics: ROUGE, BLEU, BERTScore, Distinct-n, Perplexity
 
-11. `10. Evalution Visuliztion.ipynb`
+11. `Evalution Visuliztion.ipynb`
     - Visualization of evaluation metrics
     - Comparative analysis across models
 
 ### Deployment
-12. `11. Save and Upload to huggingface.ipynb`
+12. `Save and Upload to huggingface.ipynb`
     - Model saving and Hugging Face upload procedures
 
-13. `12. app on huggingface.py`
+13. `App on huggingface.py`
     - Gradio-based web interface implementation
     - Real-time conversation handling
     - Memory management for context retention
